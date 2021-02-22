@@ -6,6 +6,10 @@ module.exports = {
   },
   variants: {
     extend: {},
+    display: ['children', 'children-first', 'children-last', 'children-odd', 'children-even', 'children-not-first', 'children-not-last', 'children-hover', 'hover', 'children-focus', 'focus', 'children-focus-within', 'focus-within', 'children-active', 'active', 'children-visited', 'visited', 'children-disabled', 'disabled', 'responsive'],
+    margin: ['children']
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-children'),
+  ],
 }
